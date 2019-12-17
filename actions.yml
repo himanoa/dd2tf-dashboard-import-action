@@ -1,0 +1,18 @@
+name: 'dd2tf'
+description: 'dd2tf'
+inputs:
+  subcommand:
+    description: 'dashboards or monitors or screenboards'
+    required: true
+  option:
+    description: 'all or ids'
+    required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.subcommand }}
+    - ${{join('--', inputs.option)}}
