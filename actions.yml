@@ -1,10 +1,10 @@
 name: 'dd2tf'
 description: 'dd2tf'
 inputs:
-  datadog_api_key:
+  datadog-api-key:
     description: 'Your datadog api key'
     required: true
-  datadog_app_key:
+  datadog-app-key:
     description: 'Your datadog application key'
     required: true
   subcommand:
