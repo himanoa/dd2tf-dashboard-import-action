@@ -7,4 +7,5 @@ RUN go get -u github.com/jteeuwen/go-bindata/...
 RUN dep ensure
 RUN go generate
 RUN go build
+RUN ls -al
 ENTRYPOINT ["/entrypoint.sh"]
