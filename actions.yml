@@ -8,8 +8,8 @@ inputs:
     description: 'all or ids'
     required: true
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  terraform: # id of output
+    description: 'terraform code'
 runs:
   using: 'docker'
   image: 'Dockerfile'
