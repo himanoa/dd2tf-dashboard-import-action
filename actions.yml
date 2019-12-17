@@ -1,6 +1,12 @@
 name: 'dd2tf'
 description: 'dd2tf'
 inputs:
+  datadog_api_key:
+    description: 'Your datadog api key'
+    required: true
+  datadog_app_key:
+    description: 'Your datadog application key'
+    required: true
   subcommand:
     description: 'dashboards or monitors or screenboards'
     required: true
